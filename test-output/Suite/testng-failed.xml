@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestCases.VerifySearchBus">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="openBrowser"/>
+          <include name="searchBus"/>
+        </methods>
+      </class> <!-- TestCases.VerifySearchBus -->
+      <class name="TestCases.VerifySearchFlight">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="openBrowser"/>
+          <include name="searchFlight"/>
+        </methods>
+      </class> <!-- TestCases.VerifySearchFlight -->
+      <class name="TestCases.VerifySearchTrain">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="openBrowser"/>
+          <include name="searchTrainn"/>
+        </methods>
+      </class> <!-- TestCases.VerifySearchTrain -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
