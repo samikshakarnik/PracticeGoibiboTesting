@@ -19,22 +19,6 @@ public class VerifySearchFlight extends BaseClass {
 		SearchFlight obj = new SearchFlight(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Thread.sleep(3000);
-//		popup obj1 = new popup(driver);
-//
-//		if (obj1.close().isEnabled() == true) {
-//			obj1.close().click();
-//			Thread.sleep(3000);
-//		} else if (obj1.close().isEnabled() != true) {
-//			Thread.sleep(3000);
-//			System.out.println(" nai millra bhai");
-//		}
-
-//		Thread.sleep(3000);
-//		if (obj1.close2().isEnabled() == true) {
-//			obj1.close2().click();
-//		}
-
-		Thread.sleep(3000);
 		obj.EntercityName().click();
 		obj.FromcityName().sendKeys(Constants.FromcityName);
 		obj.SelectFromCityName().click();

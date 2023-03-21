@@ -17,22 +17,6 @@ public class VerifySearchCab extends BaseClass {
 
 		SearchCab obj = new SearchCab(driver);
 		obj.searchCab().click();
-		popup obj1 = new popup(driver);
-
-		if (obj1.close().isEnabled() == true) {
-			obj1.close().click();
-			Thread.sleep(3000);
-		} else if (obj1.close().isEnabled() != true) {
-			Thread.sleep(3000);
-			System.out.println(" nai millra bhai");
-		}
-
-		Thread.sleep(3000);
-		if (obj1.close2().isEnabled() == true) {
-			obj1.close2().click();
-		}
-
-		Thread.sleep(3000);
 		Thread.sleep(2000);
 		obj.roundTrip().click();
 		Thread.sleep(2000);
